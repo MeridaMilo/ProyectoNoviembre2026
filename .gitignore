@@ -1,0 +1,24 @@
+
+# Archivos compilados
+*.class
+
+# Carpetas de compilación
+build/
+dist/
+
+# Configuración privada de NetBeans
+nbproject/private/
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de usuario
+*.properties
+!nbproject/project.properties
+!nbproject/project.xml
+
