@@ -1,0 +1,17 @@
+CREATE DATABASE Taller_Autofix;
+USE Taller_Autofix;
+CREATE TABLE cliente(
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    dpi INT NOT NULL UNIQUE,
+    nombre VARCHAR(40) NOT NULL
+);
+
+CREATE TABLE vehiculo
+(id_vehiculos INT AUTO_INCREMENT PRIMARY KEY,
+placa VARCHAR(20) NOT NULL UNIQUE,
+color VARCHAR(30) NOT NULL,
+marca VARCHAR(20)NOT NULL,
+id_cliente INT NOT NULL,
+FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente) ON DELETE CASCADE ON UPDATE CASCADE);
+
+
